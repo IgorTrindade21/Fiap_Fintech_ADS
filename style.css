@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Card branco com sombra */
+/* Card branco */
 .card {
   background-color: white;
   border-radius: 12px;
@@ -11,7 +11,7 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-/* Texto pequeno de label */
+/* Texto pequeno */
 .label {
   font-size: 12px;
   color: #9ca3af;
@@ -60,7 +60,7 @@ body {
   border-radius: 999px;
 }
 
-/* Responsivo: no celular o header fica menor */
+/* Responsivo: no celular */
 @media (max-width: 640px) {
   header h1 {
     font-size: 15px;
