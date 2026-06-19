@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trinpay - Painel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100">
+
+  <!-- Cabeçalho -->
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <h1 class="text-lg font-semibold">Trinpay</h1>
+    <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm">
+      + Nova transação
+    </button>
+  </header>
+
+  <!-- principal -->
+  <main class="p-4 max-w-4xl mx-auto">
+
+    <h2 class="text-xl font-semibold text-gray-800 mb-1">Painel geral</h2>
+    <p class="text-sm text-gray-500 mb-6">Visão completa das suas finanças</p>
+
+    <!-- Cards de resumo -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+
+      <div class="card">
+        <p class="label">Saldo total</p>
+        <p class="valor text-gray-800">R$ 12.847,50</p>
+      </div>
+
+      <div class="card">
+        <p class="label">Receitas</p>
+        <p class="valor text-green-600">R$ 8.500,00</p>
+      </div>
+
+      <div class="card">
+        <p class="label">Gastos</p>
+        <p class="valor text-red-500">R$ 4.350,00</p>
+      </div>
+
+      <div class="card">
+        <p class="label">Meta de poupança</p>
+        <p class="valor text-orange-500">68%</p>
+      </div>
+
+    </div>
+
+    <!-- Gastos por categoria -->
+    <div class="card mb-6">
+      <h3 class="text-sm font-semibold text-gray-700 mb-4">Gastos por categoria</h3>
+
+      <div class="categoria">
+        <span>Moradia</span>
+        <div class="barra"><div class="preenchimento bg-purple-400" style="width: 64%"></div></div>
+        <span>R$ 2.800</span>
+      </div>
+
+      <div class="categoria">
+        <span>Alimentação</span>
+        <div class="barra"><div class="preenchimento bg-orange-400" style="width: 29%"></div></div>
+        <span>R$ 1.250</span>
+      </div>
+
+      <div class="categoria">
+        <span>Compras</span>
+        <div class="barra"><div class="preenchimento bg-blue-400" style="width: 27%"></div></div>
+        <span>R$ 1.200</span>
+      </div>
+
+      <div class="categoria">
+        <span>Transporte</span>
+        <div class="barra"><div class="preenchimento bg-teal-400" style="width: 16%"></div></div>
+        <span>R$ 680</span>
+      </div>
+
+      <div class="categoria">
+        <span>Lazer</span>
+        <div class="barra"><div class="preenchimento bg-pink-400" style="width: 10%"></div></div>
+        <span>R$ 420</span>
+      </div>
+
+    </div>
+
+    <!-- Últimas transações -->
+    <div class="card">
+      <h3 class="text-sm font-semibold text-gray-700 mb-4">Últimas transações</h3>
+
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="text-gray-400 text-left border-b border-gray-100">
+            <th class="pb-2">Descrição</th>
+            <th class="pb-2 hidden sm:table-cell">Data</th>
+            <th class="pb-2 text-right">Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-50">
+            <td class="py-3 text-gray-800">Salário</td>
+            <td class="py-3 text-gray-400 hidden sm:table-cell">01/06/2025</td>
+            <td class="py-3 text-right font-medium text-green-600">+R$ 8.500,00</td>
+          </tr>
+          <tr class="border-b border-gray-50">
+            <td class="py-3 text-gray-800">Aluguel</td>
+            <td class="py-3 text-gray-400 hidden sm:table-cell">02/06/2025</td>
+            <td class="py-3 text-right font-medium text-red-500">-R$ 2.200,00</td>
+          </tr>
+          <tr class="border-b border-gray-50">
+            <td class="py-3 text-gray-800">Supermercado</td>
+            <td class="py-3 text-gray-400 hidden sm:table-cell">02/06/2025</td>
+            <td class="py-3 text-right font-medium text-red-500">-R$ 347,80</td>
+          </tr>
+          <tr class="border-b border-gray-50">
+            <td class="py-3 text-gray-800">Farmácia</td>
+            <td class="py-3 text-gray-400 hidden sm:table-cell">03/06/2025</td>
+            <td class="py-3 text-right font-medium text-red-500">-R$ 89,90</td>
+          </tr>
+          <tr>
+            <td class="py-3 text-gray-800">Uber</td>
+            <td class="py-3 text-gray-400 hidden sm:table-cell">04/06/2025</td>
+            <td class="py-3 text-right font-medium text-red-500">-R$ 42,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>

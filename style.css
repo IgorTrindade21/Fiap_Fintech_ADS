@@ -1,0 +1,68 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Card branco com sombra */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Texto pequeno de label */
+.label {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+/* Valor em destaque */
+.valor {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Linha de categoria (nome + barra + valor) */
+.categoria {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #374151;
+}
+
+.categoria span:first-child {
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.categoria span:last-child {
+  width: 70px;
+  text-align: right;
+  flex-shrink: 0;
+  color: #6b7280;
+}
+
+/* Barra de progresso */
+.barra {
+  flex: 1;
+  height: 8px;
+  background-color: #f3f4f6;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.preenchimento {
+  height: 100%;
+  border-radius: 999px;
+}
+
+/* Responsivo: no celular o header fica menor */
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 15px;
+  }
+}
